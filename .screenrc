@@ -1,0 +1,24 @@
+# デフォルトの文字コード
+defencoding UTF8
+# エスケープ文字
+escape ^t^t
+# シェルの設定
+shell zsh
+# 画面の点滅を防ぐ
+vbell off
+# スクロールバッファサイズ
+defscrollback 100000
+# ハングアップしたときにscreenは自動的にデタッチ
+autodetach on
+# 画面の一番下の行を反転させてハードステータス表示
+hardstatus alwayslastline "[%m/%d %02c] %`%-w%{=b bw}%n %t%{-}%+w"
+#hardstatus alwayslastline "%{= gk}[%m/%d %02c:%s] %{gW} %-w%{= wk}%n %t%{-}%+w %=%{gk}$USER@$HOSTNAME[$LANG] (%l) "
+#hardstatus alwayslastline "%Lw"
+# ログの保存
+logfile "$HOME/log/screen/%Y%m%d-%n.log"
+log on
+deflog on
+
+# GNU Screenの起動時やアタッチ時にターミナルをリサイズさせない方法
+# http://kaworu.jpn.org/kaworu/2008-03-06-1.php
+termcapinfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
