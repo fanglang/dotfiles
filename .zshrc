@@ -106,9 +106,10 @@ case ${UID} in
 esac
 
 ## エイリアス
+alias ls="ls --color=auto"
 alias la="ls -aG"
 alias lf="ls -FG"
-alias ll="ls -lG"
+alias ll="la -lG"
 
 #アンドロイドとportのパス
 export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin/:${PATH}:/home/yoshiro/android-sdk/tools
