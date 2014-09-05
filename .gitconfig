@@ -3,3 +3,5 @@
     email = yoshiro@fang-lang.net
 [color]
     ui = true
+[core]
+    autocrlf = false
