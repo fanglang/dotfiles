@@ -85,6 +85,9 @@ setopt auto_param_slash
 ## スペルチェック
 setopt correct
 
+## Ctrl+R や Ctrl+Aが聞かなくなった対策
+bindkey -e
+
 ## 色変更
 autoload colors
 colors
