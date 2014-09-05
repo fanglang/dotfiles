@@ -1,24 +1,24 @@
-# �ǥե���Ȥ�ʸ��������
+# デフォルトの文字コード
 defencoding UTF8
-# ����������ʸ��
+# エスケープ文字
 escape ^t^t
-# �����������
+# シェルの設定
 shell zsh
-# ���̤����Ǥ��ɤ�
+# 画面の点滅を防ぐ
 vbell off
-# ����������Хåե�������
+# スクロールバッファサイズ
 defscrollback 100000
-# �ϥ󥰥��åפ����Ȥ���screen�ϼ�ưŪ�˥ǥ��å�
+# ハングアップしたときにscreenは自動的にデタッチ
 autodetach on
-# ���̤ΰ��ֲ��ιԤ�ȿž�����ƥϡ��ɥ��ơ�����ɽ��
+# 画面の一番下の行を反転させてハードステータス表示
 hardstatus alwayslastline "[%m/%d %02c] %`%-w%{=b bw}%n %t%{-}%+w"
 #hardstatus alwayslastline "%{= gk}[%m/%d %02c:%s] %{gW} %-w%{= wk}%n %t%{-}%+w %=%{gk}$USER@$HOSTNAME[$LANG] (%l) "
 #hardstatus alwayslastline "%Lw"
-# ��������¸
+# ログの保存
 logfile "$HOME/log/screen/%Y%m%d-%n.log"
 log on
 deflog on
 
-# GNU Screen�ε�ư���䥢���å����˥����ߥʥ��ꥵ���������ʤ���ˡ
+# GNU Screenの起動時やアタッチ時にターミナルをリサイズさせない方法
 # http://kaworu.jpn.org/kaworu/2008-03-06-1.php
 termcapinfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
