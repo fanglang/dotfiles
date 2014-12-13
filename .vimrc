@@ -57,7 +57,7 @@ filetype off
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
   endif
   " originalrepos on github
   " NeoBundle 'Shougo/neobundle.vim'
@@ -72,6 +72,7 @@ if has('vim_starting')
   " NeoBundle 'andviro/flake8-vim'
   " NeoBundle 'vim-scripts/python.vim'
   ""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
+  call neobundle#end()
   
   filetype plugin indent on     " required!
   filetype indent on

@@ -110,11 +110,11 @@ case ${UID} in
 esac
 
 ## エイリアス
-alias ls="ls --color=auto"
+#alias ls="ls --color=auto"
 alias la="ls -aG"
 alias lf="ls -FG"
 alias ll="la -lG"
 
 #アンドロイドとportのパス
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin/:${PATH}:/home/yoshiro/android-sdk/tools
+export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin/:${PATH}:${HOME}/Library/Android/sdk/platform-tools:${HOME}/Library/Android/sdk/tools
 export GIT_SSH="/usr/bin/ssh"
