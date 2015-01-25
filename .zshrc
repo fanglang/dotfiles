@@ -110,7 +110,7 @@ case ${UID} in
 esac
 
 ## lsのエイリアス
-if [ ls --color=auto 2>/dev/null ]; then
+if ls --color=auto >/dev/null 2>/dev/null; then
     alias ls="ls --color=auto"
 fi
 alias la="ls -aG"
