@@ -109,12 +109,32 @@ case ${UID} in
     ;;
 esac
 
-## エイリアス
-#alias ls="ls --color=auto"
+## lsのエイリアス
+if [ ls --color=auto 2>/dev/null ]; then
+    alias ls="ls --color=auto"
+fi
 alias la="ls -aG"
 alias lf="ls -FG"
 alias ll="la -lG"
 
-#アンドロイドとportのパス
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin/:${PATH}:${HOME}/Library/Android/sdk/platform-tools:${HOME}/Library/Android/sdk/tools
 export GIT_SSH="/usr/bin/ssh"
+
+export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin/:${PATH}
+
+# androidのパス
+if [ -d ${HOME}/Library/Android/sdk ]; then
+    export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools"
+fi
+
+# rbenvのパス
+if [ -d $HOME/.rbenv ]; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
+fi
+
+# pyenvのパス
+if [ -d $HOME/.pyenv ]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+fi
