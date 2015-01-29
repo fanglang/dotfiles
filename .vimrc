@@ -58,22 +58,24 @@ filetype off
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
   call neobundle#begin(expand('~/.vim/bundle/'))
-  endif
-  " originalrepos on github
-  " NeoBundle 'Shougo/neobundle.vim'
-  " NeoBundle 'Shougo/vimproc'
-  " NeoBundle 'VimClojure'
-  " NeoBundle 'Shougo/vimshell'
-  " NeoBundle 'Shougo/unite.vim'
-  " NeoBundle 'Shougo/neocomplcache'
-  " NeoBundle 'Shougo/neosnippet'
-  " NeoBundle 'jpalardy/vim-slime'
-  " NeoBundle 'scrooloose/syntastic'
-  " NeoBundle 'andviro/flake8-vim'
-  " NeoBundle 'vim-scripts/python.vim'
-  ""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
-  call neobundle#end()
-  
-  filetype plugin indent on     " required!
-  filetype indent on
-  syntax on
+endif
+NeoBundle 'Flake8-vim'
+NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'hynek/vim-python-pep8-indent'
+" originalrepos on github
+" NeoBundle 'Shougo/neobundle.vim'
+" NeoBundle 'Shougo/vimproc'
+" NeoBundle 'VimClojure'
+" NeoBundle 'Shougo/vimshell'
+" NeoBundle 'Shougo/unite.vim'
+" NeoBundle 'Shougo/neocomplcache'
+" NeoBundle 'Shougo/neosnippet'
+" NeoBundle 'jpalardy/vim-slime'
+" NeoBundle 'scrooloose/syntastic'
+" NeoBundle 'vim-scripts/python.vim'
+""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
+call neobundle#end()
+
+filetype plugin indent on     " required!
+filetype indent on
+syntax on
