@@ -2,6 +2,7 @@
 
 filepath=`readlink -f $0`
 dirpath=`dirname $filepath`
+#dirpath=`dirname $0`
 
 ln -snf $dirpath/.gitconfig ~/
 ln -snf $dirpath/.screenrc ~/

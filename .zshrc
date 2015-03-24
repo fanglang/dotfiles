@@ -138,3 +138,8 @@ if [ -d $HOME/.pyenv ]; then
     export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init -)"
 fi
+
+# direnv
+if [ -f /usr/local/bin/direnv ]; then
+    eval "$(direnv hook zsh)"
+fi
