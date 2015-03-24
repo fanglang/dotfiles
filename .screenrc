@@ -3,7 +3,7 @@ defencoding UTF8
 # エスケープ文字
 escape ^t^t
 # シェルの設定
-shell zsh
+shell /bin/zsh
 # 画面の点滅を防ぐ
 vbell off
 # スクロールバッファサイズ
