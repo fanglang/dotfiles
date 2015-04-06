@@ -1,8 +1,6 @@
 #!/bin/sh
 
-filepath=`readlink -f $0`
-dirpath=`dirname $filepath`
-#dirpath=`dirname $0`
+dirpath=$(cd $(dirname $0) && pwd)
 
 ln -snf $dirpath/.gitconfig ~/
 ln -snf $dirpath/.screenrc ~/
