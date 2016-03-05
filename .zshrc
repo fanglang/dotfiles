@@ -143,3 +143,7 @@ fi
 if [ -f /usr/local/bin/direnv ]; then
     eval "$(direnv hook zsh)"
 fi
+
+# go
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
