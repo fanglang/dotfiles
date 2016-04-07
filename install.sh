@@ -3,7 +3,7 @@
 dirpath=$(cd $(dirname $0) && pwd)
 
 ln -snf $dirpath/.gitconfig ~/
-ln -snf $dirpath/.screenrc ~/
+ln -snf $dirpath/.tmux.conf ~/
 ln -snf $dirpath/.vim ~/
 ln -snf $dirpath/.vimrc ~/
 ln -snf $dirpath/.zshrc ~/
