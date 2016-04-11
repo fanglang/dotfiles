@@ -119,7 +119,7 @@ alias ll="la -lG"
 
 export GIT_SSH="/usr/bin/ssh"
 
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin/:${PATH}
+export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$HOME/bin:$PATH
 
 # androidのパス
 if [ -d ${HOME}/Library/Android/sdk ]; then
