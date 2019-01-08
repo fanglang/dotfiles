@@ -55,13 +55,13 @@ set nocompatible               " be iMproved
 filetype off
 
 
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#begin(expand('~/.vim/bundle/'))
-endif
-NeoBundle 'Flake8-vim'
-NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'hynek/vim-python-pep8-indent'
+" if has('vim_starting')
+"   set runtimepath+=~/.vim/bundle/neobundle.vim
+"   call neobundle#begin(expand('~/.vim/bundle/'))
+" endif
+" NeoBundle 'Flake8-vim'
+" NeoBundle 'davidhalter/jedi-vim'
+" NeoBundle 'hynek/vim-python-pep8-indent'
 " originalrepos on github
 " NeoBundle 'Shougo/neobundle.vim'
 " NeoBundle 'Shougo/vimproc'
@@ -74,7 +74,7 @@ NeoBundle 'hynek/vim-python-pep8-indent'
 " NeoBundle 'scrooloose/syntastic'
 " NeoBundle 'vim-scripts/python.vim'
 ""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
-call neobundle#end()
+" call neobundle#end()
 
 filetype plugin indent on     " required!
 filetype indent on
